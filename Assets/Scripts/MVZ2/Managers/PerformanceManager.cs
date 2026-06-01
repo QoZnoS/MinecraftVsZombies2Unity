@@ -2,6 +2,7 @@
 
 using System;
 using MukioI18n;
+using MVZ2.GameContent.Stages;
 using MVZ2.Options;
 using MVZ2Logic.Options;
 using PVZEngine;
@@ -32,6 +33,21 @@ namespace MVZ2.Managers
 
                 var fpsString = Main.LanguageManager._(FPS_TEMPLATE, currentFPS);
                 Main.Scene.SetFPS(fpsString);
+            }
+
+            var level = Main.LevelManager.GetLevel();
+            if (level != null)
+            {
+                var wave = level.CurrentWave;
+                var frameTimer = WaveStageBehaviour.GetWaveTimer(level);
+                var waveTime = frameTimer == null ? -1 : frameTimer.Frame;
+                var infoString = Main.LanguageManager._(WAVE_TEMPLATE, wave);
+                infoString += waveTime != -1 ? " " + Main.LanguageManager._(NEXTWAVE_TEMPLATE, waveTime) : "";
+                Main.Scene.SetWaveInfo(infoString);
+            }
+            else
+            {
+                Main.Scene.SetWaveInfo("");
             }
 
         }
@@ -80,6 +96,8 @@ namespace MVZ2.Managers
         public MainManager Main => MainManager.Instance;
         [TranslateMsg("帧率显示")]
         public const string FPS_TEMPLATE = "FPS: {0}";
+        public const string WAVE_TEMPLATE = "wave: {0}";
+        public const string NEXTWAVE_TEMPLATE = "nextWave: {0}";
         // 运行时变量
         private float fpsTimer;
         private float frameCount;

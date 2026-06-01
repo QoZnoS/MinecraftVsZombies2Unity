@@ -390,6 +390,10 @@ namespace MVZ2.Scenes
         {
             fpsDisplayer.SetFPS(fps);
         }
+        public void SetWaveInfo(string info)
+        {
+            fpsDisplayer.SetWaveInfo(info);
+        }
         public void GotoMapOrMainmenu()
         {
             if (main.SaveManager.IsLevelCleared(VanillaStageID.prologue))

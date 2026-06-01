@@ -20,11 +20,19 @@ namespace MVZ2.UI
         }
         public void SetFPS(string text)
         {
-            fpsText.text = text;
+            fpsInfo = text;
+            fpsText.text = fpsInfo + " " + waveInfo;
+        }
+        public void SetWaveInfo(string text)
+        {
+            waveInfo = text;
+            fpsText.text = fpsInfo + " " + waveInfo;
         }
         [SerializeField]
         private RectTransform rectTransform = null!;
         [SerializeField]
         private TextMeshProUGUI fpsText = null!;
+        private string fpsInfo = " ";
+        private string waveInfo = " ";
     }
 }
