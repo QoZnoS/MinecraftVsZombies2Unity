@@ -1744,7 +1744,41 @@
             <bool name="mvz2:boss_revenge" value="true"/>
         </properties>
     </stage>
-
+    <stage id="real_prologue" name="真正的序章" type="minigame">
+        <clear pickupModel="mvz2:entity.trophy" trophy="true"/>
+        <spawns flags="22" pointsAddition="5000">
+            <spawn id="mvz2:zombie"/>
+            <spawn id="mvz2:leather_capped_zombie"/>
+            <spawn id="mvz2:iron_helmetted_zombie"/>
+            <spawn id="mvz2:diamond_helmetted_zombie" />
+            <spawn id="mvz2:skeleton" />
+            <spawn id="mvz2:ghost" />
+            <spawn id="mvz2:mummy" />
+            <spawn id="mvz2:necromancer" />
+            <spawn id="mvz2:spider" />
+            <spawn id="mvz2:cave_spider" />
+            <spawn id="mvz2:ghast" />
+            <spawn id="mvz2:mother_terror" />
+            <spawn id="mvz2:mesmerizer" />
+            <spawn id="mvz2:berserker" />
+            <spawn id="mvz2:dullahan" />
+            <spawn id="mvz2:hell_chariot" />
+            <spawn id="mvz2:reflective_barrier_zombie" />
+            <spawn id="mvz2:wicked_hermit_zombie" />
+            <spawn id="mvz2:shikaisen_zombie" />
+            <spawn id="mvz2:emperor_zombie" />
+            <spawn id="mvz2:undead_flying_object" />
+            <spawn id="mvz2:zombie_cloud" />
+            <spawn id="mvz2:cannoneer_zombie" />
+            <spawn id="mvz2:pop_captain" />
+            <spawn id="mvz2:shadow_cell" />
+            <spawn id="mvz2:skeleton_statue" />
+            <spawn id="mvz2:hacker" />
+            <spawn id="mvz2:zombie_cat" />
+            <spawn id="mvz2:mutant_zombie" />
+            <spawn id="mvz2:mega_mutant_zombie" />
+        </spawns>
+    </stage>
 
     <!-- Puzzles -->
     <stage id="puzzle_i_zombie" name="我是僵尸" needBlueprints="false" type="puzzle" startEnergy="150" music="mvz2:puzzle">
