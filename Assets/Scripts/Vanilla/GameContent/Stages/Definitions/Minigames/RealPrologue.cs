@@ -11,6 +11,7 @@ namespace MVZ2.GameContent.Stages
         public RealPrologueStage(string nsp, string name) : base(nsp, name)
         {
             AddBehaviour(new WaveStageBehaviour(this));
+            AddBehaviour(new FinalWaveClearBehaviour(this));
             AddBehaviour(new GemStageBehaviour(this));
             AddBehaviour(new StarshardStageBehaviour(this));
         }
@@ -18,6 +19,7 @@ namespace MVZ2.GameContent.Stages
         {
             base.OnStart(level);
             level.CurrentWave = 200;
+            level.CurrentFlag = 20;
         }
     }
 }

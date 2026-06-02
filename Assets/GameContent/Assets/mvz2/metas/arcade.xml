@@ -22,7 +22,7 @@
             <condition required="mvz2:level.palace_11"/>
         </hiddenUntil>
     </minigame>
-    <minigame id="real_prologue" stage="mvz2:real_prologue" area="mvz2:day" icon="mvz2:arcade/i_zombie" />
+    <minigame id="real_prologue" stage="mvz2:real_prologue" area="mvz2:day" icon="mvz2:arcade/real_prologue" />
 
     <puzzle id="puzzle_i_zombie" stage="mvz2:puzzle_i_zombie" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
     <puzzle id="puzzle_i_skeleton" stage="mvz2:puzzle_i_skeleton" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
