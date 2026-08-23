@@ -340,6 +340,7 @@ namespace MVZ2.GameContent.Buffs
             // Stages
             public const string tutorialBlueprintDisable = "tutorial_blueprint_disable";
             public const string upgradeEndlessCost = "upgrade_endless_cost";
+            public const string zeroKSpaceCost = "zero_k_space_cost";
 
             // Chapter 1
             public const string theCreaturesHeartReduceCost = "the_creatures_heart_reduce_cost";
@@ -668,6 +669,7 @@ namespace MVZ2.GameContent.Buffs
             // Stages
             public static readonly NamespaceID tutorialDisable = Get(VanillaBuffNames.SeedPack.tutorialBlueprintDisable);
             public static readonly NamespaceID upgradeEndlessCost = Get(VanillaBuffNames.SeedPack.upgradeEndlessCost);
+            public static readonly NamespaceID zeroKSpaceCost = Get(VanillaBuffNames.SeedPack.zeroKSpaceCost);
 
             // Chapter 1
             public static readonly NamespaceID theCreaturesHeartReduceCost = Get(VanillaBuffNames.SeedPack.theCreaturesHeartReduceCost);

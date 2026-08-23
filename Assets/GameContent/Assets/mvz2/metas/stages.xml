@@ -1779,6 +1779,15 @@
             <spawn id="mvz2:mega_mutant_zombie" />
         </spawns>
     </stage>
+    <stage id="zero_k_space" name="零度空间" type="minigame">
+        <clear pickupModel="mvz2:entity.trophy" trophy="true"/>
+        <spawns flags="2" pointsAddition="9" pointsPower="2">
+            <spawn id="mvz2:mother_terror" />
+            <spawn id="mvz2:mesmerizer" />
+            <spawn id="mvz2:wicked_hermit_zombie" />
+            <spawn id="mvz2:mega_mutant_zombie" />
+        </spawns>
+    </stage>
 
     <!-- Puzzles -->
     <stage id="puzzle_i_zombie" name="我是僵尸" needBlueprints="false" type="puzzle" startEnergy="150" music="mvz2:puzzle">

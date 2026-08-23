@@ -23,6 +23,7 @@
         </hiddenUntil>
     </minigame>
     <minigame id="real_prologue" stage="mvz2:real_prologue" area="mvz2:day" icon="mvz2:arcade/real_prologue" />
+    <minigame id="zero_k_space" stage="mvz2:zero_k_space" area="mvz2:day" icon="mvz2:arcade/i_zombie" />
 
     <puzzle id="puzzle_i_zombie" stage="mvz2:puzzle_i_zombie" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
     <puzzle id="puzzle_i_skeleton" stage="mvz2:puzzle_i_skeleton" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
