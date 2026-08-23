@@ -1779,6 +1779,25 @@
             <spawn id="mvz2:mega_mutant_zombie" />
         </spawns>
     </stage>
+    <stage id="unknow_palace" name="真理伪证殿堂" type="minigame">
+        <clear pickupModel="mvz2:entity.trophy" trophy="true"/>
+        <spawns flags="2" pointsAddition="5000">
+            <spawn id="mvz2:ghast" />
+            <spawn id="mvz2:mother_terror" />
+            <spawn id="mvz2:mesmerizer" />
+            <spawn id="mvz2:berserker" />
+            <spawn id="mvz2:dullahan" />
+            <spawn id="mvz2:hell_chariot" />
+            <spawn id="mvz2:undead_flying_object" />
+            <spawn id="mvz2:cannoneer_zombie" />
+            <spawn id="mvz2:pop_captain" />
+            <spawn id="mvz2:skeleton_statue" />
+            <spawn id="mvz2:hacker" />
+            <spawn id="mvz2:zombie_cat" />
+            <spawn id="mvz2:mega_mutant_zombie" />
+        </spawns>
+        <time firstWave="1.5"/>
+    </stage>
     <stage id="zero_k_space" name="零度空间" type="minigame">
         <clear pickupModel="mvz2:entity.trophy" trophy="true"/>
         <spawns flags="2" pointsAddition="9" pointsPower="2">

@@ -35,6 +35,9 @@ namespace MVZ2.GameContent.Stages
         private void PostEntityInitCallback(EntityCallbackParams param, CallbackResult result)
         {
             var entity = param.entity;
+            // 该触发器注册于全局，仅在零度空间关卡生效。
+            if (!LevelHasBehaviour<ZeroKSpaceStageBehaviour>(entity.Level))
+                return;
             var definitionID = entity.GetDefinitionID();
             if (definitionID != VanillaPickupID.gunpowder && definitionID != VanillaPickupID.furiousGunpowder)
                 return;
@@ -54,6 +57,6 @@ namespace MVZ2.GameContent.Stages
         /// <summary>
         /// 火药爆炸前的帧数。
         /// </summary>
-        public const int GUNPOWDER_EXPLODE_TIMEOUT = 3;
+        public const int GUNPOWDER_EXPLODE_TIMEOUT = 5;
     }
 }

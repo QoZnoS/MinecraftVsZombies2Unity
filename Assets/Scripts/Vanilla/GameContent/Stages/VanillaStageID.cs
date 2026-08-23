@@ -109,6 +109,7 @@ namespace MVZ2.GameContent.Stages
         public const string lockedChestsRevenge = "locked_chests_revenge";
 
         public const string realPrologue = "real_prologue";
+        public const string unknowPalace = "unknow_palace";
         public const string zeroKSpace = "zero_k_space";
 
         // Puzzles
